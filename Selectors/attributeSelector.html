@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute Selector</title>
+    <style>
+      div[class*="box"] {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #111;
+        margin: 24px auto;
+        border-radius: 50%;
+      }
+      .box1 {
+        background-color: #ea97e5;
+      }
+      .box2 {
+        background-color: rgb(101, 202, 236);
+      }
+      .box3 {
+        background-color: rgb(214, 196, 255);
+      }
+      .box4 {
+        background-color: #f0b9b2;
+      }
+      .box5 {
+        background-color: #ef0f0f;
+        color: aliceblue;
+      }
+      ol[type="a"] {
+        list-style-type: lower-alpha;
+        background: red;
+      }
+
+      ol[type="b" s] {
+        list-style-type: lower-alpha;
+        background: lime;
+      }
+
+      ol[type="B" s] {
+        list-style-type: upper-alpha;
+        background: grey;
+      }
+
+      ol[type="c" i] {
+        list-style-type: upper-alpha;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+    </div>
+    <div>
+      <ol type="A">
+        <li>Red background for case-insensitive matching (default for the type selector)</li>
+      </ol>
+      <ol type="b">
+        <li>Lime background if `s` modifier is supported (case-sensitive match)</li>
+      </ol>
+      <ol type="B">
+        <li>Grey background if `s` modifier is supported (case-sensitive match)</li>
+      </ol>
+      <ol type="C">
+        <li>Green background if `i` modifier is supported (case-insensitive match)</li>
+      </ol>
+    </div>
+    <p></p>
+  </body>
+</html>
