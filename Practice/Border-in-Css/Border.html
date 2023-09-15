@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border In CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ebb0d3;
+        /* padding: 50px; */
+        text-align: center;
+      }
+
+      div[class*="border"] {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        margin: 41px;
+        background-color: rgb(205, 175, 232);
+        text-align: center;
+        /* padding: 50%;
+
+        box-sizing: border-box; */
+        /* border-radius: 10px; */
+        padding: 7% 20px;
+        font-size: 18px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-weight: 600;
+      }
+      .border-solid {
+        border: 5px solid black;
+      }
+      .border-dashed {
+        border: 5px dashed black;
+      }
+      .border-dotted {
+        border: 5px dotted black;
+      }
+      .border-double {
+        border: 5px double black;
+      }
+      .border-groove {
+        border: 5px groove black;
+      }
+      .border-ridge {
+        border: 5px ridge black;
+      }
+      .border-inset {
+        border: 5px inset black;
+      }
+      .border-outset {
+        border: 5px outset black;
+      }
+      .border-radius {
+        border-radius: 10px;
+        border: 5px dotted black;
+      }
+      .border-top {
+        border-top: 5px solid black;
+      }
+      .border-bottom {
+        border-bottom: 5px solid black;
+      }
+      .border-right {
+        border-right: 5px solid black;
+      }
+      .border-left {
+        border-left: 5px solid black;
+      }
+      .border-top-right-radius {
+        border-top-right-radius: 40px;
+        border: 5px solid black;
+      }
+      .border-top-left-radius {
+        border-top-left-radius: 40px;
+        border: 5px solid black;
+      }
+      .border-bottom-right-radius {
+        border-bottom-right-radius: 40px;
+        border: 5px solid black;
+      }
+      .border-bottom-left-radius {
+        border-bottom-left-radius: 40px;
+        border: 5px solid black;
+      }
+      .border-bottom-style {
+        border: 5px solid black;
+        border-bottom-style: dashed;
+      }
+      .border-top-style {
+        border: 5px solid black;
+        border-top-style: dotted;
+      }
+      .border-right-style {
+        border: 5px solid black;
+        border-bottom-style: double;
+      }
+      .border-left-style {
+        border: 5px solid black;
+        border-bottom-style: groove;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-box">
+      <div class="border-solid">border-solid</div>
+      <div class="border-dashed">border-dashed</div>
+      <div class="border-dotted">border-dotted</div>
+      <div class="border-double">"border-double</div>
+      <div class="border-groove">border-groove</div>
+      <div class="border-ridge">border-ridge</div>
+      <div class="border-inset">border-inset</div>
+      <div class="border-outset">border-outset</div>
+      <div class="border-radius">border-radius</div>
+      <div class="border-top">border-top</div>
+      <div class="border-bottom">border-bottom</div>
+      <div class="border-right">border-right</div>
+      <div class="border-left">border-left</div>
+      <div class="border-top-right-radius">border-top-right-radius</div>
+      <div class="border-top-left-radius">border-top-left-radius</div>
+      <div class="border-bottom-right-radius">border-bottom-right-radius</div>
+      <div class="border-bottom-left-radius">border-bottom-left-radius</div>
+      <div class="border-bottom-style">border-bottom-style</div>
+      <div class="border-top-style">border-top-style</div>
+      <div class="border-right-style">border-right-style</div>
+      <div class="border-left-style">border-left-style</div>
+    </section>
+  </body>
+</html>

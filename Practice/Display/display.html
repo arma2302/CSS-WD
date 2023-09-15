@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display in css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Dispkay Flex in css</h1>
+        <!-- 2-boxes -->
+        <div class="row">
+          <div class="col-50"></div>
+          <div class="col-50"></div>
+        </div>
+
+        <!-- 3 boxes -->
+        <div class="row">
+          <div class="col-30"></div>
+          <div class="col-30"></div>
+          <div class="col-30"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
