@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        width: 100%;
+        position: relative;
+        background-color: #b8cef1;
+        height: 100vh;
+        overflow: hidden;
+      }
+      div[class*="box"] {
+        width: 300px;
+        height: 300px;
+        border: 10px double black;
+        position: absolute;
+        z-index: 1;
+      }
+      .box-1 {
+        top: -72px;
+        left: -50px;
+        background-color: #70cabb;
+        z-index: 1;
+      }
+      .box-2 {
+        top: -72px;
+        right: -50px;
+        background-color: rgb(192, 141, 239);
+      }
+      .box-3 {
+        bottom: -72px;
+        left: -50px;
+        background-color: rgb(244, 149, 219);
+        z-index: 1;
+      }
+      .box-4 {
+        bottom: -72px;
+        right: -50px;
+        background-color: rgb(216, 147, 147);
+        z-index: 1;
+      }
+      .box-5 {
+        top: 30%;
+        left: 42%;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+      }
+      div[class*="circle"] {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px double black;
+        position: relative;
+      }
+      .circle-1 {
+        top: 96px;
+        left: 120px;
+        background-color: rgb(192, 141, 239);
+        z-index: 0;
+      }
+      .circle-2 {
+        bottom: -334px;
+        left: 120px;
+        background-color: rgb(216, 147, 147);
+        z-index: 0;
+      }
+
+      .circle-3 {
+        bottom: 36%;
+        left: 78%;
+        background-color: rgb(92, 76, 108);
+        z-index: 0;
+      }
+      .circle-4 {
+        bottom: 6%;
+        right: -79%;
+        background-color: rgb(182, 245, 255);
+        z-index: 0;
+      }
+      div[class*="small-box"] {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 2px solid;
+        position: absolute;
+      }
+      .small-box1 {
+        top: -50px;
+        left: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="box-3"></div>
+      <div class="box-4"></div>
+      <div class="box-5">
+        <div class="small-box1"></div>
+        <div class="small-box2"></div>
+        <div class="small-box3"></div>
+        <div class="small-box4"></div>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </section>
+  </body>
+</html>

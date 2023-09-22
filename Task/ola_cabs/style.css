@@ -55,11 +55,13 @@ nav a:first-of-type {
 }
 
 #section-1 {
-  background-image: url(../ola_cabs/images/hero-banner.webp);
+  background-image: url(https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/hero-banner.webp);
+  clip-path: polygon(100% 0, 100% 67%, 100% 86%, 0 100%, 0 51%, 0% 0%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 50%;
   height: 400px;
+  position: relative;
 }
 .heading h1 {
   color: #ffffff;
