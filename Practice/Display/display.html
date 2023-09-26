@@ -57,6 +57,26 @@
         border: 5px solid slateblue ;
         padding: 20px;
       }
+      .flex-wrap
+      {
+        flex-wrap: wrap;
+      }
+      .tablet-wrap
+      {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+
+      @media (max-width: 767.98px) 
+      {
+       .tablet-wrap
+       {
+        flex-wrap: wrap;
+        justify-content: center;
+       } 
+      }
     </style>
   </head>
   <body>
@@ -77,9 +97,9 @@
         </div>
         </div></section>
 <section>
-        <!-- 3 boxes -->
+        <!-- 3 boxes --> 
         <div class="container">
-        <div class="row">
+        <div class="row tablet-wrap">
           <div class="col-30"><img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="" /></div>
           <div class="col-30"><img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="" /></div>
 
@@ -118,7 +138,7 @@
     <!-- 6 boxes -->
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row flex-wrap">
                 <div class="col-15">
                   <img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="">  
                 </div>
@@ -137,6 +157,16 @@
                   <div class="col-15">
                   <img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="">  
                 </div>
+                  <div class="col-15">
+                  <img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="">  
+                </div>
+                 <div class="col-15">
+                  <img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="">  
+                </div>
+                <div class="col-15">
+                  <img src="https://pub-static.fotor.com/assets/bg/83ff74b6-f4cd-4efc-8bee-0c652905e265.png" alt="">  
+                </div>
+                
             </div>
         </div>
     </section>

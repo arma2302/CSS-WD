@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      .container {
+        width: 90%;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+        /* justify-content: space-around;
+        justify-content: space-between;
+        justify-content: center; */
+        gap: 20px;
+
+        /* align-items: center;
+        align-items: start;
+        align-items: end; */
+        align-items: center;
+        height: 500px;
+        /* flex-direction: row-reverse; */
+      }
+      .col-30 {
+        width: 30%;
+        /* height: 300px; */
+        border: 1px solid black;
+        /* margin: 10px; */
+        padding: 20px;
+      }
+      .col-20 {
+        width: 20%;
+        height: 300px;
+        border: 1px solid black;
+        /* margin: 10px; */
+      }
+      @media (max-width: 768px) {
+        .row {
+          /* flex-direction: column; */
+          /* flex-wrap: wrap; */
+          justify-content: center;
+        }
+        .col-30 {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-30">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique voluptas, consectetur neque sequi eaque sint magni optio sapiente eos numquam repudiandae nobis molestiae molestias doloribus corporis. Ea necessitatibus
+            voluptatum architecto!
+          </div>
+          <div class="col-30">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, necessitatibus dolores! Ipsa consectetur numquam quasi voluptatem excepturi voluptas, aliquid aut! Animi praesentium magni unde id ut culpa harum debitis
+            assumenda.
+          </div>
+          <div class="col-30">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur placeat aperiam odio ad doloribus, nisi eos necessitatibus excepturi non unde animi assumenda perspiciatis rerum fuga voluptatum iusto, esse aliquid?
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-20">box-1</div>
+          <div class="col-20">box-2</div>
+          <div class="col-20">box-3</div>
+          <div class="col-20">box-3</div>
+
+          <div class="col-20">box-3</div>
+        </div>
+      </div>
+    </section> -->
+  </body>
+</html>
