@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: bisque;
+        padding: 20px;
+      }
+      nav a {
+        color: #121212;
+        text-decoration: none;
+        font-size: 40px;
+        padding: 10px;
+      }
+      .logo i {
+        font-size: 40px;
+      }
+      .mobile {
+        display: flex;
+        flex-direction: column;
+        /* display: none; */
+      }
+      #menu {
+        display: block;
+        border: none;
+        background: transparent;
+      }
+      .overlay {
+        display: none;
+      }
+      @media (max-width: 575.98px) {
+        .desktop {
+          display: none;
+        }
+        /* .overlay {
+          position: absolute;
+          top: 24%;
+          right: 27px;
+          background-color: #121212;
+          width: 50%;
+          display: block;
+          /* transform: translate(-50%); */
+        /* } */
+        .mobile a {
+          /* display: none; */
+          color: aliceblue;
+          font-size: 30px;
+        }
+        .checkbox {
+          position: absolute;
+          display: block;
+          height: 32px;
+          width: 32px;
+          top: 20px;
+          right: 50px;
+          z-index: 5;
+          opacity: 0;
+          cursor: pointer;
+        }
+        .hamburger-lines {
+          display: block;
+          height: 35px;
+          width: 35px;
+          position: absolute;
+          top: 17px;
+          right: 50px;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          /* background-color: black; */
+        }
+        .hamburger-lines .line {
+          display: block;
+          height: 4px;
+          width: 100%;
+          border-radius: 10px;
+          background: #0e2431;
+        }
+
+        .hamburger-lines .line1 {
+          transform-origin: 0% 0%;
+          transition: transform 0.4s ease-in-out;
+        }
+
+        .hamburger-lines .line2 {
+          transition: transform 0.2s ease-in-out;
+        }
+
+        .hamburger-lines .line3 {
+          transform-origin: 0% 100%;
+          transition: transform 0.4s ease-in-out;
+        }
+        .mobile {
+          /* padding-top: 120px; */
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          height: 100vh;
+          width: 50%;
+          transform: translate(117%);
+          display: flex;
+          flex-direction: column;
+          margin-left: -40px;
+          padding-left: 50px;
+          transition: transform 0.5s ease-in-out;
+          text-align: center;
+          /* position: absolute;
+          top: 24%;
+          right: 30px; */
+          background-color: bisque;
+        }
+
+        input[type="checkbox"]:checked ~ .mobile {
+          transform: translateX(0);
+        }
+
+        input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+          transform: rotate(45deg);
+        }
+
+        input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+          transform: scaleY(0);
+        }
+
+        input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+          transform: rotate(-45deg);
+        }
+
+        input[type="checkbox"]:checked ~ .logo {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo"><i class="fa-solid fa-house" style="color: #121212"></i></div>
+        <nav class="desktop">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">services</a>
+        </nav>
+        <!-- <button id="menu">
+          <i class="fa-solid fa-bars" style="color: #000000; font-size: 40px"></i>
+        </button> -->
+        <div>
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+      </header>
+      <!-- <div class="overlay"> -->
+      <nav class="mobile">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">services</a>
+      </nav>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>

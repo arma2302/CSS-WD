@@ -167,7 +167,9 @@ select {
   justify-content: start;
   align-items: center;
   border: 5px solid gray;
-  /* position: absolute; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .screen {
   display: flex;
@@ -176,5 +178,9 @@ select {
   gap: 42px;
 }
 .mobile-wrapper {
-  /* position: relative; */
+  position: relative;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: n;
 }
