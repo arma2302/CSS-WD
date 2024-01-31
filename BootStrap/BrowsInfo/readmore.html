@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="col-4 single-client-review row flex-column">
+      <!-- icon and name div -->
+      <!--  -->
+      <div class="icon-name-box">
+        <div class="qupte-img"><img src="images/quotation-marks-icon.jpg" alt="" /></div>
+        <div class="name"><h3 class="text-center mt-2">Sadhguru's Isha Foundation</h3></div>
+      </div>
+      <p>
+        We cannot express our gratitude enough to the Browseinfo Team for their exceptional Odoo implementation services, guiding us seamlessly through versions 8 to 16 with our complex multiple company setup at Sasmar Healthcare..<span
+          id="more3"
+          class="d-none"
+        >
+          <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur dicta beatae rerum molestiae! Ex, fugit odit eligendi nihil quam recusandae aliquid iusto odio quod temporibus quis, debitis quo ratione!</b></span
+        >...<span id="read-more" onclick="ReadMore(this,'d-none')">read more</span>
+      </p>
+    </div>
+    <!--  -->
+    <div class="col-4 single-client-review row flex-column">
+      <!-- icon and name div -->
+      <!--  -->
+      <div class="icon-name-box">
+        <div class="qupte-img"><img src="images/quotation-marks-icon.jpg" alt="" /></div>
+        <div class="name"><h3 class="text-center mt-2">Sadhguru's Isha Foundation</h3></div>
+      </div>
+      <p>
+        We cannot express our gratitude enough to the Browseinfo Team for their exceptional Odoo implementation services, guiding us seamlessly through versions 8 to 16 with our complex multiple company setup at Sasmar Healthcare..<span
+          id="more3"
+          class="d-none"
+        >
+          <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur dicta beatae rerum molestiae! Ex, fugit odit eligendi nihil quam recusandae aliquid iusto odio quod temporibus quis, debitis quo ratione!</b></span
+        >...<span id="read-more" onclick="ReadMore(this,'d-none')">read more</span>
+      </p>
+    </div>
+    <script>
+      document.getElementsByClassName("d-none").style.display = "none";
+      console.log("10000");
+      function ReadMore(thisreadmore, add) {
+        if (add.style.display == "none") {
+          add.style.dispay = "block";
+          thisreadmore.innerText = "Real Less";
+        } else {
+          add.style.display = "none";
+          thisreadmore.innerText = "Real More";
+        }
+      }
+    </script>
+  </body>
+</html>
